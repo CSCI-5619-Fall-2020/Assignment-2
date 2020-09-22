@@ -16,9 +16,8 @@ class Game
         // This creates a basic Babylon Scene object (non-mesh)
         var scene = new Scene(engine);
 
-        // Create a camera at the origin, facing forward
-        var camera = new UniversalCamera("camera1", new Vector3(0, 1.7, 0), scene);
-        camera.setTarget(new Vector3(0, 1.7, 1));
+        // Create a camera above the origin
+        var camera = new UniversalCamera("camera1", new Vector3(0, 2, 0), scene);
         camera.attachControl(canvas, true);
 
         // add code to create your environment here

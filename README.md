@@ -1,8 +1,16 @@
-# Assignment 2: Babylon.js and TypeScript
+# Assignment 2: Creating Virtual Environments
 
 **Due: Monday, September 27, 10:00pm CDT**
 
-Description. 
+The purpose of this assignment is for you to gain experience creating virtual environments in Babylon.  A template project has been provided with an empty scene.  Your goal is to create your own virtual environment using free 3D art assets found on the web, with the following requirements:
+
+- The environment should be an outdoor scene.
+- The models should include materials with textures.
+- You should not use any of the assets that were already provided in previous lectures or assignments.
+
+You are free to use any legal sources for third party assets, including downloading models from websites such as [Clara.io](https://clara.io/).  Alternatively, you can also locate and export assets from the [Unity Asset Store](https://assetstore.unity.com/), as shown in [Lecture 2](https://github.com/CSCI-5619-Fall-2020/Lecture-2).
+
+Creativity is encouraged!
 
 ## Submission Information
 
@@ -18,16 +26,19 @@ Third Party Assets:
 
 ## Rubric
 
-Graded out of 10 points.  Empty template project.  Each of the parts to be added are presented in lecture or covered in one of the lessons in the [Babylon 101](https://doc.babylonjs.com/babylon101/) tutorials.
+Graded out of 10 points.  Each of the parts to be added are presented in lecture or covered in the [Babylon 101](https://doc.babylonjs.com/babylon101/) and [Babylon How To](https://doc.babylonjs.com/how_to/) tutorials.
 
-1. Create an outdoor scene
-2. Create N objects
-3. Add multiple lights, ambient, directional, spotlight, pointlight
-4. Add a skybox
-5. Camera with collisions and gravity
-6. Upload a working build
+1. The ground of the virtual environment should be an imported mesh that is more complex that a simple rectangular ground plane. (2)
+2. The environment should also contain *at least* six unique objects that are also imported meshes.  These objects should be placed in the environment to form a plausible scene.  (2)
+3. The imported meshes should be children of a `TransformNode` object called `root`.  When you apply a transformation to the `root` node (e.g., moving or rotating), all the imported mesh objects in the scene should move along with it.  (1)
+4. Add an ambient (hemispheric) light and a directional light.  Adjust the parameters for both lights so that the illumination looks reasonable in your scene.  (1)
+5. Add a [skybox](https://doc.babylonjs.com/how_to/skybox) to the scene.  You can use the example textures from the Babylon website or find your own images on the internet.  (2)
+6. Implement [collision detection](https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity) so that the camera cannot fly through the mesh objects in your scene.  Note that you do not have to implement gravity, but you may choose to do so.  (1)
+7. Build the program by executing `npm run build` and make sure to include your assets in the `dist` directory.  The debug layer should be disabled in your final build.  Upload it to your public `.www` directory, and make sure to set the permissions so that it loads correctly in a web browser.  You should include this URL in submission information section of your `README.md` file. (1)
 
-**Bonus Challenge:**  Make one of the mesh objects follow the player
+**Bonus Challenge:**  Change to "night mode" when the `n` key is pressed.  In this mode, the ambient and directional lights should be made much darker to simulate an outdoor environment at night.  Add other types of lights that are only turned on at night, such as point and spot lights.  Adjust the parameters for these new lights to create some atmosphere in your scene.  When the `d` key is pressed, change back to "daytime mode" by returning all the lights to their original state. (1)
+
+Make sure to document all third party assets. ***Be aware that points will be deducted for using third party assets that are not properly documented.***
 
 ## Submission
 
@@ -39,8 +50,6 @@ You will need to check out and submit the project through GitHub classroom.  The
 2. start a local web server and compile by running ```npm run start``` and pointing the browser at your ```index.html```
 
 Please test that your submission meets these requirements.  For example, after you check in your final version of the assignment to GitHub, check it out again to a new directory and make sure everything builds and runs correctly.
-
-Make sure to document all third party assets. ***Be aware that points will be deducted for using third party assets that are not properly documented.***
 
 ## Local Development 
 
