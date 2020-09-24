@@ -1,6 +1,6 @@
 # Assignment 2: Creating Virtual Environments
 
-**Due: Monday, September 27, 10:00pm CDT**
+**Due: Monday, September 28, 10:00pm CDT**
 
 The purpose of this assignment is for you to gain experience creating virtual environments in Babylon.  A template project has been provided with an empty scene.  Your goal is to create your own virtual environment using free 3D art assets found on the web, with the following requirements:
 
