@@ -2,7 +2,7 @@
 
 USER="your_user_name"
 MACHINE="any_CSE_Labs_Linux_machine"
-DIRECTORY=".www/Lecture-4/"
+DIRECTORY=".www/Assignment-2/"
 
 rm -rf dist/assets
 cp -r assets dist/assets
